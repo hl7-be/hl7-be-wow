@@ -69,6 +69,11 @@
         <generation value="markdown"/>
       </page>
       <page>
+        <nameUrl value="feedback.html"/>
+        <title value="Feedback"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
         <nameUrl value="background.html"/>
         <title value="Background"/>
         <generation value="html"/>

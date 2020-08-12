@@ -16,12 +16,14 @@ HL7 Belgium proposes that all specifications should support a consistent approac
 While the "main deliverable" consists of a set of technical specifications, the HL7 community in Belgium pursuits a content structure that contains the following types of artifacts
 
 
-{% include image.html img="./metamodel.png" title="HL7 Belgium Artifact Model" caption="HL7 Belgium artifact model" %}
+![HL7 Belgium Artifact Model]({{site.baseurl}}metamodel.png)
+<br clear="all"/>
 
 #### Functional Module
 This module contains the functional description - a non-technical insight on the intended functionality, the use cases and functional (business) services that are in scope of the specification. This is not a full functional analysis of the systems, onlt the analysis related to the data exchange needs. This module also contains the logical data models - a functional description of the data needed for each of the data exchanges. 
 > Target users: Functional analysis, clinical experts, validation engineers
 
+{:class="table table-bordered table-condensed table-striped"}
 | Artifact | Function  | Type  | Required / Recommended | Example | 
 |---|---|---|---|---|
 | Use case  | A functional description of the use cases for data exchange | Free text | Mandatory | *GP submits prescription, Pharmacy retrieves it* |
@@ -32,9 +34,10 @@ This module contains the functional description - a non-technical insight on the
 #### Vocabulary
 The Vocabulary module contains the terminology specification - predefined or context-specific sets of values, which can be used throughout and across systems. Typically this relies on existing terminology systems like SNOMED CT, LOINC, etc. but can also consist of new code systems. The value sets can be associated with the  technical or functional specifications. For example, value sets like "status code" are related to the technical information (the functional analysts do not define those codes). Other codes are important to appear on the functional level, for example "civil states in Belgium" - in this case, the codes are defined at the functional level and must be taken by the technical implementation. The Naming Systems are artifacts used in the specification to point to the terminology sources.
 
+{:class="table table-bordered table-condensed table-striped"}
 | Artifact | Function  | Type  | Required / Recommended | Example | 
 |---|---|---|---|---|
-| Code System | Pointer to an existing set of coded values or declaration of a new set of codes | [CodeSystem](http://hl7.org/fhir/codesystem.html) | As needed | *SNOMED CT,<br/>LOINC* |
+| Code System | Pointer to an existing set of coded values or declaration of a new set of codes | [CodeSystem](http://hl7.org/fhir/codesystem.html) | As needed | *SNOMED CT, LOINC* |
 | Value Set  | A set of coded values to be used in a specific context | [VaueSet](http://hl7.org/fhir/valueset.html) | As needed | *Lab order codes (from LOINC)* |
 | Naming System  | A namespace (typically a url) for unequivocally referring to a set of codes and identifiers | [NamingSystem](http://hl7.org/fhir/namingsystem.html) | As needed | http://snomed.info/sct<br/>http://loinc.org<br/>http://unitsofmeasure.org |
 
@@ -44,6 +47,7 @@ The Vocabulary module contains the terminology specification - predefined or con
 #### Technical Implementation
 The Technical Implementation module presents the conformance artifacts that define the technical behaviour of FHIR: the actual profiles, the operations and parameters, demonstrative examples, etc.
 
+{:class="table table-bordered table-condensed table-striped"}
 | Artifact | Function  | Type  | Required / Recommended | Example | 
 |---|---|---|---|---|
 | Transaction | A formal definition of a technical exchange of information, usually with specific event and purpose | FHIR resource | Recommended | *M_T1:Submit_Prescription*<br/>*M_T2:Submit_Dispense* |
@@ -60,6 +64,7 @@ The Technical Implementation module presents the conformance artifacts that defi
 #### Support
 The Support module serves implementers in the implementation and validation of the specification. It consists of test data, test scripts, and capability statements, which are computable specifications for the expected behaviour of a system.
 
+{:class="table table-bordered table-condensed table-striped"}
 | Artifact | Function  | Type  | Required / Recommended | Example | 
 |---|---|---|---|---|
 | Test Data | Test data (resources) which can be used to test the behaviour of the systems. | FHIR resource | Recommended |  |

@@ -1,25 +1,32 @@
 ### Feedback
 
+<br/>
 HL7 Belgium FHIR Implementation Guides use the following feedback mechanism:
+<br/>
 
+#### Feedback repository
+* Feedback consists of issues submitted to the source repository (on github). This allows one centralized view of all issues, facilitates planning and promotes transparency.
+For this repository, for example, the issues are in https://github.com/hl7-be/hl7-be-wow/issues
 
-* Feedback for an Implementation Guide is entered as an issue to that implementation guide's source. This allows one centralized view of all issues, facilitates planning and promotes transparency.
+<br/>
 
-
-* When the feedback feature is enabled, each section header of the Implementation Guide has a link to provide feedback on that section:
+#### Direct Feedback feature
+* A special "feedback" feature exists for Belgian ImplementationGuides. When enabled, each section of the Implementation Guide has a link to provide feedback on that section:
 
 <div style="text-align:center"><img src="{{site.baseurl}}feedback-1.png" alt="drawing" width="500" align="center"/></div>
 <br clear="all"/>
 
-* To facilitate feedback, even for users without a GitHub account, the feedback is provided via an online form which registers the issue in GitHub.
+#### Feedback form
+* This link takes the users to an online form which registers the issue in GitHub. This allows users without a GitHub account to also provide feedback. 
 <div style="text-align:center"><img src="{{site.baseurl}}feedback-2.png" alt="drawing" width="500" align="center"/></div>
 <br clear="all"/>
 
-* The issues are shown in a dashboard, for planning and tracking:
-  * Sandbox/ incoming issues are those that have been submitted but they are not planned
-  * To Do issues are accepted to be addressed
-  * Work in Progress
-  * Done
+#### Feedback dashboard
+* A dashboard contains the issues for planning and tracking:
+  * **Sandbox/ incoming** (issues have been submitted but they are not planned)
+  * **To Do** (issues are accepted to be addressed)
+  * **Work in Progress**
+  * **Done**
 
 <div style="text-align:center"><img src="{{site.baseurl}}feedback-3.png" alt="drawing" width="500" align="center"/></div>
 <br clear="all"/>
@@ -31,3 +38,4 @@ HL7 Belgium FHIR Implementation Guides use the following feedback mechanism:
 <br clear="all"/>
 
 
+<br/>

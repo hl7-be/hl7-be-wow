@@ -1,19 +1,17 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd" lang="en">
   <a name="scope">  </a>
 	<p>
-    This is our FHIR Implementation Guide. It contains the specifications developed by our community. 
+    This ImplementationGuide captures our Way of Working: the techniques, constraints and pratices that we use when making FHIR-based specifications for use in Belgium. 
    </p>
 	<blockquote class="stu-note">
-	<strong>This documentation and set of artefacts are still undergoing development.</strong>
-	This content is only for demonstrative purposes.
+	<strong>This documentation is always being developed. Do not expect it to be 'stable' - rather, please provide feedback to enhance it.</strong>
 	</blockquote>
 	<p> </p>
   <h3>Content</h3> <a name="content"> </a>
 	<p/>
 
-<p>This publication contains the full set of specifications...</p>
+<p>This specification contains the Way of Working for making ImplementationGuides.</p>
 <p></p>
-<p>There is also an overview of the projects and motivation for the specifications.</p>
 <p></p>
 
 <a name="navigation"> </a>
@@ -27,12 +25,14 @@
     any other constraints of terminologies, questionnaires, and other components used as part of their implementation process. In some cases, 
     licensing requirements may limit the systems that data captured using certain questionnaires may be shared with.
   </p>
+	<p>
+    Similarly to the HL7 FHIR community, the HL7 Community prefers the use of open source with commercial-friendly licenses. This specific implementation Guide is under a Attribute CC By license, which allows others to distribute, remix, tweak, and build upon this work, even commercially, as long as they credit the source for the original creation.
+  </p>
 
 	<a name="disclaimer"> </a>
 	<h3>Disclaimer</h3>
 	<p>
-    The specification herewith documented is a demo working specification, and may not be used for any implementation purposes. 
-    This draft is provided without warranty of completeness or consistency, and the official publication supersedes this draft.
-    No liability can be inferred from the use or misuse of this specification, or its consequences.
+    This documentation is provided without warranty of completeness or consistency.
+    No liability can be inferred from the use or misuse of this documentation, or its consequences.
   </p>
 </div>

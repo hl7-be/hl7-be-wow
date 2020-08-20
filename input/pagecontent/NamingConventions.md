@@ -84,7 +84,7 @@ XxYyZz = PascalCase or WikiCase (WikiCase preferred i.e. not ThisIsAProfile but 
 
 &nbsp; 
 ## ExampleScenarios
-> Folder:     `input/vocabulary`   
+> Folder:     `input/scenarios`   
 > Resource id:   `be-examplescenario-xxyyzz`  
 > Filename:   (same as id)  
 > Resource name:   `BeXxYyZz`
@@ -93,7 +93,7 @@ XxYyZz = PascalCase or WikiCase (WikiCase preferred i.e. not ThisIsAProfile but 
 TBD
 
 ## Examples
-> Folder:     `input/examples`   
+> Folder:     `input/examples`     or      `input/examples/<profile>`, where `<profile>` is the name of the profile (e.g. addiction), and not the type (condition)  
 > Resource id:   `example-xxxxxxxx`  
 > Filename:   (same as id)  
 > Resource name:   `xxxxxxxx`
@@ -101,5 +101,4 @@ TBD
 (where xxxxxxxx is the title for the example e.g. "simple prescription")
 
 ## Testing
-
-
+TBD

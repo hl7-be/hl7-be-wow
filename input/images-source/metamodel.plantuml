@@ -47,11 +47,11 @@ package "Functional Module" as Functional {
   class "    **Use Case**    " as UCase<<FL>> {
   }
 
-  Class "   **Service**   " as Interaction<<FL>> {
+  Class "   **   Service   **   " as Interaction<<FL>> {
   }
 
 
-  Class "  **Logical Model**  " as LogicalModel<<FL>> {
+  Class "  **Logical Model**  \n  **(Care Set)**  " as LogicalModel<<FL>> {
   --
 '  StructureDefinition
   }
@@ -62,8 +62,8 @@ package "Functional Module" as Functional {
   ???
   }
 '/
-UCase -right[hidden]-> Interaction :"                 "
-Interaction -right[hidden]-> LogicalModel :"             "
+UCase -right[hidden]-> Interaction  :"           "
+Interaction -right[hidden]-> LogicalModel :"            "
 }
 
 
@@ -98,7 +98,7 @@ ImplementationGuide
 
 package "Technical Implementation" as Tech {
 
-  Class "**       Transaction       **" as Transaction<<TL>> {
+  Class "**     Transaction     **" as Transaction<<TL>> {
 /'    |_ **ID**
     |_ Name
     |_ Description
@@ -116,7 +116,7 @@ package "Technical Implementation" as Tech {
 '  StructureDefinition
   }
 
-  Class "** Operation Definition **" as OpDef<<TL>> {
+  Class "     **Operation**     \n      **Definition**     " as OpDef<<TL>> {
   --
 '  OperationDefinition
   }
@@ -127,22 +127,35 @@ package "Technical Implementation" as Tech {
   }
 
 
-  Class "**   Example   **\n**   Instance   **" as ExampleInstance<<TL>> {
+  Class "**     Example     **\n**     Instance     **" as ExampleInstance<<TL>> {
   --
 '  Resource
   }
 
-  Class "**Example**\n**Scenario**" as ExampleScenario<<TL>> {
+  Class "     **Example**     \n     **Scenario**     " as ExampleScenario<<TL>> {
   --
 '  ExampleScenario
   }
 
-Transaction -right[hidden]-> Profile
-Profile -right[hidden]-> ExampleScenario
-Transaction -down[hidden]-> OpDef
-OpDef -right[hidden]-> SearchParam
-SearchParam -right[hidden]-> ExampleInstance
-Transaction -down[hidden]-> OpDef
+
+'Profile -down[hidden]-> ExampleInstance
+
+ExampleScenario -right[hidden]-> Transaction  :"       "
+Transaction -right[hidden]-> Profile :"       "
+ExampleScenario -down[hidden]-> OpDef
+OpDef -right[hidden]-> SearchParam :"       "
+SearchParam -right[hidden]-> ExampleInstance :"       "
+
+
+Profile -down[hidden]-> ExampleInstance
+Transaction -down[hidden]-> SearchParam
+
+'Transaction -right[hidden]-> Profile
+'Profile -right[hidden]-> ExampleScenario
+'ExampleInstance -up[hidden]-> ExampleScenario
+'Transaction -down[hidden]-> OpDef
+'SearchParam -right[hidden]-> ExampleInstance
+'Transaction -down[hidden]-> OpDef
 'Profile -[hidden]-> OpDef
 
 }
@@ -157,15 +170,16 @@ package "Support" as Support {
   }
   class "**     Test Script     **" as TestScript<<MD>> {
   }
-  class "**   Capability   **\n **  Statement   **" as CapabilityStatement<<MD>> {
+  class "**     Capability     **\n     **Statement     **" as CapabilityStatement<<MD>> {
   }
 
 
-TestScript -right[hidden]-> CapabilityStatement : "  "
-TestData -left[hidden]-> TestScript : " "
+CapabilityStatement -right[hidden]-> TestScript :"       "
+TestScript -right[hidden]-> TestData  :"       "
 
 }
 
+'TestData -down[hidden]-> TestScript : " "
 
 
 
@@ -190,28 +204,41 @@ package "Vocabulary" as Term {
     --
 '    CodeSystem
   }
+  Class "** Concept Mapping **" as ConceptMap<<TM>> {
+    --
+'    NamingSystem
+  }
   Class "** Value Set **" as ValueSet<<TM>> {
     --
 '    ValueSet
   }
 NamingSystem -down[hidden]-> CodeSystem
-CodeSystem -down[hidden]-> ValueSet
+CodeSystem -down[hidden]-> ConceptMap
+ConceptMap -down[hidden]-> ValueSet
 }
 
+UCase -down[hidden]-> ExampleScenario
+Interaction -down[hidden]-> Transaction
+'UCase -down[hidden]-> Transaction
+LogicalModel -down[hidden]-> Profile
+'LogicalModel -down[hidden]-> Profile
+
+OpDef -down[hidden]-> CapabilityStatement
+
+/'
 
 Profile -right[hidden]-> NamingSystem
 ExampleInstance -right[hidden]-> CodeSystem
-TestScript -right[hidden]-> ValueSet
+ConceptMap -right[hidden]-> ExampleInstance
+ConceptMap -right[hidden]-> ExampleInstance
 
-Interaction -down[hidden]-> Transaction
-OpDef -down[hidden]-> CapabilityStatement
+ValueSet -right[hidden]-> CapabilityStatement
 LogicalModel -down[hidden]-> Transaction
-'UCase -down[hidden]-> ExampleScenario
-
-
 ExampleInstance -down[hidden]-> TestScript
 
 
+
+'/
 
 'Tech -[hidden]-> Term
 'Tech -right[hidden]-> Term

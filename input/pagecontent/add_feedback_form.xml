@@ -1,0 +1,117 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> <head> <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> </head>
+  <ol style="list-style-type: decimal">
+  <li>
+  <p>Create a secret user token</p>
+  </li>
+  
+  <li>
+  <p>Make the kanban:</p>
+  <ol style="list-style-type: lower-alpha">
+  <li>
+  <p>Add a project to your IG, with a Kanban board.</p>
+  </li>
+  <li>
+  <p>Add your (technical) user as an admin (project admin, not repo admin)</p>
+  </li>
+  <li>
+  <p>Copy the Kanban board's url, e.g. <a href="https://github.com/openhie/hiv-ig/projects/1"><span class="underline" style="background-color:#FF99FF">https://github.com/openhie/hiv-ig/projects/1</span></a></p>
+  </li>
+  <li>
+  <p>Setup 4 columns: Inbox, To Do, In Progress, Done</p>
+  </li>
+  <li>
+  <p>Setup automation: Every new issue goes into Inbox; All Closed issues go into Done</p>
+  </li>
+  <li>
+  <p>Test the automation by creating a new issue AND associating it with the project . It should show up in the Kanban, in the Inbox column. Then close the issue (from the kanban, open it and click (close issue). It should go to the Done column</p>
+  <p><img src="./add_feedback_form-image1.png" style="width:5.67361in;height:1.22222in" /></p>
+<br clear="all"/>
+  </li>
+ 
+  <li>
+  <p>Check the column ID by opening the kanban source in the browser and searcing for Inbox:</p>
+  <p><img src="./add_feedback_form-image2.png" style="width:4.90972in;height:0.30556in" /></p>
+  </li>
+
+  </ol>  
+  <p> </p>
+  <p> </p>
+  <li>
+  <p>Make the form:</p>
+  <ol style="list-style-type: lower-alpha">
+  <li>
+  <p>Login to the google account you want to use (e.g. A technical user)</p>
+  </li>
+  <li>
+  <p>Clone this one: <a href="https://docs.google.com/forms/d/1G490wtD_sXWkHmqiqZgriC_DR5-GLwvkMIqUljK_fOA/edit"><span class="underline">https://docs.google.com/forms/d/1G490wtD_sXWkHmqiqZgriC_DR5-GLwvkMIqUljK_fOA/edit</span></a></p>
+  </li>
+  <li>
+  <p>Add header - 1600 x 400 px</p>
+  </li>
+  <li>
+  <p>Create Prefilled Link and mark the fields so that you can change them:</p>
+  
+  <ol style="list-style-type: lower-alpha">
+  <li>
+  <p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url&amp;entry.1353807103=1111111111111111&amp;entry.247644557=22222222222222&amp;entry.608335814=333333333333333333&amp;entry.1874334477=4444444444444444444&amp;entry.933469843=5555555555555555"><span style="background-color:#FFFF77" class="underline">https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url</span></a><a href="https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url&amp;entry.1353807103=1111111111111111&amp;entry.247644557=22222222222222&amp;entry.608335814=333333333333333333&amp;entry.1874334477=4444444444444444444&amp;entry.933469843=5555555555555555"><span class="underline">&amp;</span></a><a href="https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url&amp;entry.1353807103=1111111111111111&amp;entry.247644557=22222222222222&amp;entry.608335814=333333333333333333&amp;entry.1874334477=4444444444444444444&amp;entry.933469843=5555555555555555"><span style="background-color:#77FFFF" class="underline">entry.1353807103</span></a><a href="https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url&amp;entry.1353807103=1111111111111111&amp;entry.247644557=22222222222222&amp;entry.608335814=333333333333333333&amp;entry.1874334477=4444444444444444444&amp;entry.933469843=5555555555555555"><span class="underline">=1111111111111111&amp;</span></a><a href="https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url&amp;entry.1353807103=1111111111111111&amp;entry.247644557=22222222222222&amp;entry.608335814=333333333333333333&amp;entry.1874334477=4444444444444444444&amp;entry.933469843=5555555555555555"><span style="background-color:#77FF77" class="underline">entry.247644557</span></a><a href="https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url&amp;entry.1353807103=1111111111111111&amp;entry.247644557=22222222222222&amp;entry.608335814=333333333333333333&amp;entry.1874334477=4444444444444444444&amp;entry.933469843=5555555555555555"><span class="underline">=22222222222222&amp;entry.608335814=333333333333333333&amp;entry.1874334477=4444444444444444444&amp;entry.933469843=5555555555555555</span></a>
+  </p>
+  </li>
+  </ol>
+  </li>
+  <li>
+  <p>Open the form's Script Editor. Update the following fields:</p>
+  <ol style="list-style-type: lower-alpha">
+  <li>
+  <p>Change the handle and repo to that of the IG</p>
+  </li>
+  <li>
+  <p>Change the project to the project ID (seen in the URL in 2.c above, typically <span style="background-color:#FF99FF">1</span>)</p>
+  </li>
+  <li>
+  <p>Change the columnID to what is obtained in step 2.f above</p>
+  </li>
+  <li>
+  <p>Change ghToken and ghToken2 to secret tokens by your user</p>
+  </li>
+  </ol></li>
+  <li>
+  <p>Add Triggers</p>
+  
+  <ol style="list-style-type: lower-alpha">
+  <li>
+  <p>Edit ...Current Project's triggers</p>
+  </li>
+  <li>
+  <p>Create a new trigger - OnFormSubmit; head; From form; On form submit; choose your notification settings (best immediately in the beginning to debug if needed)</p>
+  </li>
+  <li>
+  <p>Google will ask you to sign in and ask it to use the Gmail account. Do so if you trust this code :)</p>
+  </li>
+  <li>
+  <p>Optionally, run once in the console. Comment and uncomment the lines indicated. If all is well, there is now a new item in your inbox,</p>
+  </li>
+  </ol></li>
+  </ol></li>
+  <li>
+  <p>Create / update a yaml file in your IG named data\input\features.yml, with the content</p>
+  </li>
+  </li>
+  </ol>
+  <pre>
+  ---
+  feedback:
+     active: true
+     formUrl: <a href="https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url"><span style="background-color:#FFFF77" class="underline">https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url</span></a>
+     dashboard: <a href="https://github.com/openhie/hiv-ig/projects/1"><span style="background-color:#FF99FF" class="underline">https://github.com/openhie/hiv-ig/projects/1</span></a>
+     parameters:
+    - name: "'entry.1353807103'"
+      value: encodeURIComponent($(document).attr('title'))
+    - name: "'entry.247644557'"
+      value: document.getElementById(id).textContent
+  </pre>
+  <p> </p>
+  <p>(make sure you have the --- in the first line, otherwise it will fail)</p>
+  <p> </p>
+  <p> </p>
+</div>

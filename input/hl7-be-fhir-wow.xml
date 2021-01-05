@@ -62,6 +62,11 @@
         <title value="Feedback"/>
         <generation value="markdown"/>
       </page>
+      <page>
+        <nameUrl value="add_feedback_form.html"/>
+        <title value="Adding a Feedback form"/>
+        <generation value="html"/>
+      </page>
     </page>
     <!-- copyright year is a mandatory parameter -->
     <parameter>

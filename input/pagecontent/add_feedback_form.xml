@@ -14,7 +14,7 @@
   <p>Add your (technical) user as an admin (project admin, not repo admin)</p>
   </li>
   <li>
-  <p>Copy the Kanban board's url, e.g. <a href="https://github.com/openhie/hiv-ig/projects/1"><span class="underline" style="background-color:#FF99FF">https://github.com/openhie/hiv-ig/projects/1</span></a></p>
+  <p>Copy the Kanban board's url, e.g. <a href="https://github.com/hl7-be/hl7-be-wow/projects/1"><span class="underline" style="background-color:#FF99FF">https://github.com/hl7-be/hl7-be-wow/projects/1</span></a></p>
   </li>
   <li>
   <p>Setup 4 columns: Inbox, To Do, In Progress, Done</p>
@@ -103,7 +103,7 @@
   feedback:
      active: true
      formUrl: <a href="https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url"><span style="background-color:#FFFF77" class="underline">https://docs.google.com/forms/d/e/1FAIpQLSdFe3PHRfKlbIf1p1WJ3oqTjnMA_BNyaTdmiKTjpu9RYIaBdQ/viewform?usp=pp_url</span></a>
-     dashboard: <a href="https://github.com/openhie/hiv-ig/projects/1"><span style="background-color:#FF99FF" class="underline">https://github.com/openhie/hiv-ig/projects/1</span></a>
+     dashboard: <a href="https://github.com/hl7-be/hl7-be-wow/projects/1"><span style="background-color:#FF99FF" class="underline">https://github.com/hl7-be/hl7-be-wow/projects/1</span></a>
      parameters:
     - name: "'entry.1353807103'"
       value: encodeURIComponent($(document).attr('title'))

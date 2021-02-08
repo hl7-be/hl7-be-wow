@@ -38,6 +38,15 @@
 -->
 	</li>
 	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Testing<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="testing.html">Testing approach</a>
+			</li>
+		</ul>
+	</li>
+	<li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Collaboration<b class="caret"></b>
 		</a>
 		<ul class="dropdown-menu">
